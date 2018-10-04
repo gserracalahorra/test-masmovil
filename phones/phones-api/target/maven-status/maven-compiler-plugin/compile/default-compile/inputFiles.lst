@@ -1,0 +1,9 @@
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/controller/exception/NoContentException.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/repository/PhoneRepository.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/controller/dto/PhoneDto.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/controller/PhoneController.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/AppConfiguration.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/repository/entity/Phone.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/controller/ExceptionController.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/service/PhoneService.java
+/home/guillem/Documentos/workspace/test-masmovil/phones/phones-api/src/main/java/com/masmovil/phone/api/PhonesApplication.java
