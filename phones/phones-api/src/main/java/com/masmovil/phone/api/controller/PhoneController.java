@@ -36,7 +36,8 @@ public class PhoneController {
         PhoneDto dto = new PhoneDto();
         dto.setId(domain.getId());
         dto.setName(domain.getName());
-        dto.setName(domain.getDescription());
+        dto.setDescription(domain.getDescription());
+        dto.setImagePath(domain.getImagePath());
         dto.setPrice(domain.getPrice());
         return dto;
     }

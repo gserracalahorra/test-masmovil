@@ -1,5 +1,6 @@
 package com.masmovil.phone.api.repository.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,7 +11,8 @@ import java.math.BigDecimal;
 @Table(name = "PHONES")
 @Data
 @NoArgsConstructor
-public class Phone {
+@AllArgsConstructor
+public class PhoneEntity {
 
     @Id
     @GeneratedValue
