@@ -24,13 +24,13 @@ public class PhoneService {
         Idealmente los conversores seran clases aparte
      */
     private Phone fromEntityToDomain(PhoneEntity entity) {
-        Phone phone = new Phone();
-        phone.setId(entity.getId());
-        phone.setName(entity.getName());
-        phone.setDescription(entity.getDescription());
-        phone.setImagePath(entity.getImagePath());
-        phone.setPrice(entity.getPrice());
-        return phone;
+        Phone domain = new Phone();
+        domain.setId(entity.getId());
+        domain.setName(entity.getName());
+        domain.setDescription(entity.getDescription());
+        domain.setImagePath(entity.getImagePath());
+        domain.setPrice(entity.getPrice());
+        return domain;
     }
 
 }

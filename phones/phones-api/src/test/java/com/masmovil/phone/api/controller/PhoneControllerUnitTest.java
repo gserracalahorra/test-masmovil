@@ -2,7 +2,6 @@ package com.masmovil.phone.api.controller;
 
 import com.masmovil.phone.api.controller.dto.PhoneDto;
 import com.masmovil.phone.api.controller.exception.NoContentException;
-import com.masmovil.phone.api.repository.entity.PhoneEntity;
 import com.masmovil.phone.api.service.PhoneService;
 import com.masmovil.phone.domain.Phone;
 import com.masmovil.phone.domain.factory.PhoneDomainStubFactory;
