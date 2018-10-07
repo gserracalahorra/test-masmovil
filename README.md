@@ -32,7 +32,7 @@
 
     sudo docker run -d -p 8082:8082 customers-api
 
-    sudo docker run -d --network host orders-api
+    sudo docker run --network host orders-api
 
 #### Probar los microservicios
 
