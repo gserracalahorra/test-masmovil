@@ -34,9 +34,9 @@ public class PhoneControllerUnitTest {
     public void getCatalogueTest() {
         List<Phone> phoneDomains = PhoneDomainStubFactory.createValidPhoneList();
 
-        when(phoneService.getCatalogue()).thenReturn(phoneDomains);
+        when(phoneService.findCatalogue()).thenReturn(phoneDomains);
 
-        List<PhoneDto> phoneDtos = phoneController.getCatalogue();
+        List<PhoneDto> phoneDtos = phoneController.findCatalogue();
 
         phoneDtos.stream().forEach(dtoPhone -> {
             Phone domainPhone = phoneDomains.stream()
@@ -54,9 +54,9 @@ public class PhoneControllerUnitTest {
     public void getContentNotFoundException() {
         List<Phone> phones = PhoneDomainStubFactory.createEmptyList();
 
-        when(phoneService.getCatalogue()).thenReturn(phones);
+        when(phoneService.findCatalogue()).thenReturn(phones);
 
-        phoneController.getCatalogue();
+        phoneController.findCatalogue();
     }
 
 }

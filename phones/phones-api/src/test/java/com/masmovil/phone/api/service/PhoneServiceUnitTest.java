@@ -37,7 +37,7 @@ public class PhoneServiceUnitTest {
 
         when(phoneRepository.findAll()).thenReturn(entities);
 
-        List<Phone> results = phoneService.getCatalogue();
+        List<Phone> results = phoneService.findCatalogue();
 
         assertEquals(3, results.size());
 
@@ -60,7 +60,7 @@ public class PhoneServiceUnitTest {
 
         when(phoneRepository.findAll()).thenReturn(entities);
 
-        List<Phone> results = phoneService.getCatalogue();
+        List<Phone> results = phoneService.findCatalogue();
 
         assertEquals(0, results.size());
     }

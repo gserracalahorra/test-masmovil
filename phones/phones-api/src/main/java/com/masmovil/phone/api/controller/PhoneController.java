@@ -19,8 +19,8 @@ public class PhoneController {
     private PhoneService phoneService;
 
     @RequestMapping(path = "/catalogue", method = RequestMethod.GET)
-    public List<PhoneDto> getCatalogue() {
-        List<Phone> phoneDomainList = phoneService.getCatalogue();
+    public List<PhoneDto> findCatalogue() {
+        List<Phone> phoneDomainList = phoneService.findCatalogue();
 
         if (phoneDomainList.isEmpty()) {
             throw new NoContentException();

@@ -15,7 +15,7 @@ public class PhoneService {
     @Autowired
     private PhoneRepository phoneRepository;
 
-    public List<Phone> getCatalogue() {
+    public List<Phone> findCatalogue() {
         List<PhoneEntity> phoneEntityList = phoneRepository.findAll();
         return phoneEntityList.stream().map(entity -> fromEntityToDomain(entity)).collect(Collectors.toList());
     }
