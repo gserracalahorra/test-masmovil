@@ -1,5 +1,3 @@
- Dillinger
-
 # Test masmovil
 
 * SISTEMA OPERATIVO UTILIZADO: Ubuntu 18
