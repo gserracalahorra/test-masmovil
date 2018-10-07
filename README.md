@@ -3,10 +3,10 @@
 SISTEMA OPERATIVO UTILIZADO: Ubuntu 18
 
 
-* Manual de instalación
+# Manual de instalación
 
 
-CONSTRUIR LOS ARTEFACTOS .jar
+## CONSTRUIR LOS ARTEFACTOS .jar
 
 
 /test-masmovil/phones -> mvn clean install
@@ -16,7 +16,7 @@ CONSTRUIR LOS ARTEFACTOS .jar
 /test-masmovil/orders -> mvn clean install
 
 
-CONSTRUIR LAS IMAGENES DOCKER
+## CONSTRUIR LAS IMAGENES DOCKER
 
 /test-masmovil/phones
 sudo docker build -t phones-api .
@@ -27,7 +27,7 @@ sudo docker build -t customers-api .
 /test-masmovil/orders
 sudo docker build -t orders-api .
 
-LEVANTAR LOS CONTENEDORES
+## LEVANTAR LOS CONTENEDORES
 
 
 sudo docker run -d -p 8081:8081 phones-api
@@ -37,7 +37,7 @@ sudo docker run -d -p 8082:8082 customers-api
 sudo docker run -d --network host orders-api
 
 
-PROBAR LOS MICROSERVICIOS:
+## PROBAR LOS MICROSERVICIOS:
 
 Comando correcto (HTTP 401):
 
@@ -53,20 +53,20 @@ curl -X POST -H 'Content-Type: application/json;' -i http://localhost:8083/order
 
 
 
-* Mejoras para el sistema
+# Mejoras para el sistema
 
-** Idealmente, cada microservicio estará en un repositorio git independiente
+### Idealmente, cada microservicio estará en un repositorio git independiente
 
-** Sistema de logs para la aplicación
+### Sistema de logs para la aplicación
 
-** Pueden realizarse tests de integración con docker y docker-compose
+### Pueden realizarse tests de integración con docker y docker-compose
 
-** Las órdenes, en lugar de mostrarse por consola, persistirlas en una base de datos. Podemos usar una base de datos NoSql como MongoDB porque si la aplicación va a insertar la orden significa que ha pasado las validaciones del usuario y de los productos, por lo que la integridad referencial está garantizada.
+### Las órdenes, en lugar de mostrarse por consola, persistirlas en una base de datos. Podemos usar una base de datos NoSql como MongoDB porque si la aplicación va a insertar la orden significa que ha pasado las validaciones del usuario y de los productos, por lo que la integridad referencial está garantizada.
 
-** Implementar arquitectura escalable para lo que utilizaremos:
+### Implementar arquitectura escalable para lo que utilizaremos:
 
-*** Componentes del framework Spring Cloud
+#### Componentes del framework Spring Cloud
 
-*** Sistema de orquestación
+#### Sistema de orquestación
 
-*** Tolerancia a fallos (Hystrix)
+#### Tolerancia a fallos (Hystrix)
