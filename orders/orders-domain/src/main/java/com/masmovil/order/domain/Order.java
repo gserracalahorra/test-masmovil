@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Random;
 
+
 @Getter
 @Setter
 public class Order {
@@ -23,7 +24,12 @@ public class Order {
     public Order(Customer customer, List<Phone> phones) {
         this.id = new Random().nextLong();
         this.customer = customer;
+        setPhones(phones);
+    }
+
+    public void setPhones(List<Phone> phones) {
         this.phones = phones;
+        calculateTotalPrice();
     }
 
     public void calculateTotalPrice() {
