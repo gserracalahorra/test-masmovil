@@ -36,7 +36,7 @@
 
 #### Probar los microservicios
 
-- Comando correcto (HTTP 401):
+- Comando correcto (HTTP 201):
 
     curl -X POST -H 'Content-Type: application/json;' -i http://localhost:8083/orders-api/v1/order --data '{"customerId": 1,"phoneIds": [1, 3, 4, 6 ]}'
 
